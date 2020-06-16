@@ -1,5 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    position: relative;
+    height: 100vh;
+
+    background-color: black;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+
+    overflow: hidden;
+}
+
+.container {
+    background-image: url("../img/home-theater.png");
+    height: 130%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: -190px;
+
+    width: 100%;
+    opacity: 80%;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+}
+
+.background {
+    position: absolute;
+    width: 150vw;
+    height: 250px;
+    left: -90px;
+    top: -150px;
+
+    background: #000000;
+    transform: rotate(-5deg);
+}
+
+.text {
+    z-index: 5;
+}
+
+h1 {
+    position: absolute;
+    width: max-content;
+    left: 25px;
+    top: 15px;
+
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+h2 {
+    position: absolute;
+    width: max-content;
+    left: 45px;
+    top: 100px;
+
+    font-weight: normal;
+    font-size: 1.5rem;
+
+}
+
+.cell, .email {
+    position: relative;
+    float: right;
+    width: max-content;
+    font-size: 1em;
+    margin: 1.5em;
+}
+
+
