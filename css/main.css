@@ -117,6 +117,9 @@ h2 {
     .email {
         margin-top: 3vh;
     }
+    .cell {
+        margin-top: 1vh;
+    }
     .line {
         position: relative;
         border-top: 2px solid white;
