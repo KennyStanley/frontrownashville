@@ -112,8 +112,14 @@ form .input-container input, form .input-container button {
   padding: 0 1rem;
 }
 
+form .input-container input:focus {
+  border: none;
+  outline: none;
+}
+
 form .input-container input {
   background-color: transparent;
+  color: white;
 }
 
 form .input-container button {

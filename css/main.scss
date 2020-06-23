@@ -91,9 +91,14 @@ form {
             border-radius: 25px;
             padding: 0 1rem;
         }
+        input:focus {
+            border: none;
+            outline: none;
+        }
 
         input {
             background-color: transparent;
+            color: white;
         }
         button {
             font-weight: 700;
