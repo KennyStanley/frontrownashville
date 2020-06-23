@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    background-color: #131313;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.text {
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+header {
+    width: 80%;
+    text-align: center;
+
+    .logo {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: calc(20px + 1vmin);
+    }
+
+    .line {
+        width: 80%;
+        height: 0;
+        border: 1px solid #BA0000;
+        margin: 0 auto;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        a {
+            text-decoration-color: #bdbdbd;
+            margin: 0.5rem 0.8rem;
+
+            .email, .cell {
+                height: 100%;
+                margin: 0;
+            }
+
+        }
+    }
+    
+}
+
+
+form {
+    text-align: center;
+    text-transform: uppercase;
+
+    .input-container {
+        
+        font-size: 0.75rem;
+        line-height: 30px;
+        background-color: black;
+        border: none;
+        border-radius: 25px;
+
+        input, button {
+            font-size: inherit;
+            font-family: inherit;
+            line-height: inherit;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 25px;
+            padding: 0 1rem;
+        }
+
+        input {
+            background-color: transparent;
+        }
+        button {
+            font-weight: 700;
+            background-color: #BA0000;
+            border-radius: 25px;
+        }
+    }
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: 0 calc(0.5rem + 2vmin);
+
+  img {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.caption-text {font-size: 11px}
+}
+
+
+@media screen and (min-width: 425px) {
+    header {
+        .logo {
+            font-size: 1.9rem;
+        }
+        .links {
+            font-size: 1rem;
+        }
+    }
+
+    .slideshow-container {
+        max-width: 70vw;
+    }
+
+    form {
+        font-size: 1.2rem;
+        .input-container {
+            font-size: 1rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    header {
+        .logo {
+            font-size: 2.2rem;
+        }
+        .links {
+            font-size: 1.3rem;
+        }
+    }
+
+    .slideshow-container {
+        max-width: 60vw;
+    }
+
+    form {
+        font-size: 1.3rem;
+        .input-container {
+            font-size: 1.1rem;
+            line-height: 2.7rem;
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    header {
+        .logo {
+            font-size: 3rem;
+        }
+        .links {
+            font-size: 1.2rem;
+        }
+    }
+
+    .slideshow-container {
+        max-width: 40vw;
+    }
+
+    form {
+        font-size: 1.4rem;
+        .input-container {
+            font-size: 1.3rem;
+            line-height: 2.8rem;
+        }
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) {
+
+}
