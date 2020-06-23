@@ -1,27 +1,20 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100vw;
-  margin: 0;
+  margin:0;
   background-color: #131313;
 }
 
 .mySlides {
-  display: none;
+  display: none
 }
 
 img {
@@ -33,58 +26,39 @@ img {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
 }
 
 header {
   width: 80%;
-  text-align: center;
+  text-align: center;  
 }
-
 header .logo {
   font-family: 'Archivo Black', sans-serif;
   font-size: calc(20px + 1vmin);
 }
-
 header .line {
   width: 80%;
   height: 0;
   border: 1px solid #BA0000;
   margin: 0 auto;
 }
-
 header .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   font-size: 0.8rem;
   padding: 1rem 0;
 }
-
 header .links a {
-  -webkit-text-decoration-color: #bdbdbd;
-          text-decoration-color: #bdbdbd;
+  text-decoration-color: #bdbdbd;
   margin: 0.5rem 0.8rem;
 }
-
-header .links a .email, header .links a .cell {
+.email, .cell {
   height: 100%;
   margin: 0;
 }
@@ -93,16 +67,15 @@ form {
   text-align: center;
   text-transform: uppercase;
 }
-
 form .input-container {
+      
   font-size: 0.75rem;
   line-height: 30px;
   background-color: black;
   border: none;
   border-radius: 25px;
 }
-
-form .input-container input, form .input-container button {
+input, button {
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
@@ -111,22 +84,22 @@ form .input-container input, form .input-container button {
   border-radius: 25px;
   padding: 0 1rem;
 }
-
-form .input-container input:focus {
+input:focus {
   border: none;
   outline: none;
 }
 
-form .input-container input {
+input {
   background-color: transparent;
   color: white;
 }
-
-form .input-container button {
+button {
   font-weight: 700;
   background-color: #BA0000;
   border-radius: 25px;
 }
+
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -134,10 +107,8 @@ form .input-container button {
   position: relative;
   margin: 0 calc(0.5rem + 2vmin);
 }
-
 .slideshow-container img {
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
 }
 
@@ -152,13 +123,9 @@ form .input-container button {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -169,7 +136,7 @@ form .input-container button {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -201,7 +168,6 @@ form .input-container button {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -218,84 +184,85 @@ form .input-container button {
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 @keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next, .caption-text {
-    font-size: 11px;
-  }
+  .prev, .next,.caption-text {font-size: 11px}
 }
+
 
 @media screen and (min-width: 425px) {
   header .logo {
     font-size: 1.9rem;
   }
   header .links {
-    font-size: 1rem;
+      font-size: 1rem;
   }
+
   .slideshow-container {
-    max-width: 70vw;
+      max-width: 70vw;
   }
+
   form {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
   form .input-container {
     font-size: 1rem;
     line-height: 2.5rem;
   }
 }
-
 @media screen and (min-width: 600px) {
   header .logo {
     font-size: 2.2rem;
   }
   header .links {
-    font-size: 1.3rem;
+      font-size: 1.3rem;
   }
+
   .slideshow-container {
-    max-width: 60vw;
+      max-width: 60vw;
   }
+
   form {
-    font-size: 1.3rem;
+      font-size: 1.3rem;
   }
   form .input-container {
     font-size: 1.1rem;
     line-height: 2.7rem;
   }
 }
-
 @media screen and (min-width: 800px) {
   header .logo {
     font-size: 3rem;
   }
   header .links {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
+
   .slideshow-container {
-    max-width: 40vw;
+      max-width: 40vw;
   }
+
   form {
-    font-size: 1.4rem;
+      font-size: 1.4rem;
   }
   form .input-container {
     font-size: 1.3rem;
     line-height: 2.8rem;
-  }
 }
-/*# sourceMappingURL=main.css.map */
+}
+
+
+
+
+@media screen and (orientation: landscape) {
+
+}
