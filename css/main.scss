@@ -34,16 +34,16 @@ img {
 }
 
 header {
-    width: 80%;
+    width: 94%;
     text-align: center;
 
     .logo {
         font-family: 'Archivo Black', sans-serif;
-        font-size: calc(20px + 1vmin);
+        font-size: calc(20px + 3vmin);
     }
 
     .line {
-        width: 80%;
+        width: 60%;
         height: 0;
         border: 1px solid #BA0000;
         margin: 0 auto;
@@ -51,7 +51,7 @@ header {
 
     .links {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         font-size: 0.8rem;
         padding: 1rem 0;
@@ -62,6 +62,11 @@ header {
             .email, .cell {
                 height: 100%;
                 margin: 0;
+
+                i {
+                    padding: 0.5rem;
+                }
+
             }
 
         }
@@ -213,7 +218,7 @@ form {
 @media screen and (min-width: 425px) {
     header {
         .logo {
-            font-size: 1.9rem;
+            font-size: 2.1rem;
         }
         .links {
             font-size: 1rem;
@@ -235,7 +240,7 @@ form {
 @media screen and (min-width: 600px) {
     header {
         .logo {
-            font-size: 2.2rem;
+            font-size: 2.6rem;
         }
         .links {
             font-size: 1.3rem;
