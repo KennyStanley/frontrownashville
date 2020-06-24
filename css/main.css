@@ -111,7 +111,6 @@ form .input-container input, form .input-container button {
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
-  text-transform: uppercase;
   border: none;
   border-radius: 25px;
   padding: 0 1rem;
@@ -128,6 +127,7 @@ form .input-container input {
 }
 
 form .input-container button {
+  text-transform: uppercase;
   font-weight: 700;
   background-color: #BA0000;
   border-radius: 25px;
