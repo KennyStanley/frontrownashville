@@ -1,3 +1,7 @@
+:root {
+  --window-height: calc(var(--vh, 1vh) * 100);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,7 +18,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
+  height: var(--window-height, 100vh);
   width: 100vw;
   margin: 0;
   background-color: #131313;
