@@ -1,3 +1,7 @@
+:root {
+    --window-height: calc(var(--vh, 1vh) * 100);
+  }
+
 * {
     box-sizing: border-box
 }
@@ -7,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    height: var(--window-height, 100vh);
     width: 100vw;
     margin:0;
     background-color: #131313;
@@ -81,8 +85,8 @@ form {
 
     .input-container {
         
-        font-size: 0.75rem;
-        line-height: 30px;
+        font-size: 0.8rem;
+        line-height: 2.25rem;
         background-color: black;
         border: none;
         border-radius: 25px;
@@ -255,7 +259,7 @@ form {
         font-size: 1.3rem;
         .input-container {
             font-size: 1.1rem;
-            line-height: 2.7rem;
+            line-height: 2.9rem;
         }
     }
 }
@@ -277,7 +281,7 @@ form {
         font-size: 1.4rem;
         .input-container {
             font-size: 1.3rem;
-            line-height: 2.8rem;
+            line-height: 3rem;
         }
     }
 }

@@ -104,8 +104,8 @@ form {
 }
 
 form .input-container {
-  font-size: 0.75rem;
-  line-height: 30px;
+  font-size: 0.8rem;
+  line-height: 2.25rem;
   background-color: black;
   border: none;
   border-radius: 25px;
@@ -285,7 +285,7 @@ form .input-container button {
   }
   form .input-container {
     font-size: 1.1rem;
-    line-height: 2.7rem;
+    line-height: 2.9rem;
   }
 }
 
@@ -304,7 +304,7 @@ form .input-container button {
   }
   form .input-container {
     font-size: 1.3rem;
-    line-height: 2.8rem;
+    line-height: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
