@@ -40,3 +40,8 @@ function pictureLoop(){
   setInterval(plusAutoSlides, 4000);
 }
 window.onload = pictureLoop;
+
+function fadeSplash(){
+  document.querySelector('#splash').className = "fade-out";
+  console.log(document.querySelector('#splash').className);
+}
