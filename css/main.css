@@ -92,6 +92,7 @@ body {
   opacity: 1;
   -webkit-animation: fadeOut 0.5s ease-in forwards;
           animation: fadeOut 0.5s ease-in forwards;
+  display: none;
 }
 
 .mySlides {
