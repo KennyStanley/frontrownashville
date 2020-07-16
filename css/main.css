@@ -58,6 +58,10 @@ header {
   text-align: center;
 }
 
+header #logo {
+  width: 20%;
+}
+
 header .logo {
   font-family: 'Archivo Black', sans-serif;
   font-size: calc(20px + 3vmin);
